@@ -74,3 +74,21 @@ Rubens Gondek TIA: 41411978
 3. Rodapé
   * Informações sobre o site
 	* Menu de links úteis (Política de Privacidade, Mapa do site, Quem Somos, Contato, Ajuda) 
+	
+
+# Painel de usuário
+1. Cabeçalho
+  * Barra de pesquisa
+  * Área de Login 
+  * Formulário de cadastro de usuário
+  * Formulário de cadastro de produto
+  * Botões para redes sociais (Facebook, Google+, Twitter)
+  * Telefone e email para contato
+  * Botão para Ajuda
+2. Corpo
+  * Barra lateral com meu perfil
+  * grid com produtos adicionados
+  * **************ESTAMOS FAZENDO*******************	
+3. Rodapé
+  * Informações sobre o site
+	* Menu de links úteis (Política de Privacidade, Mapa do site, Quem Somos, Contato, Ajuda) 
