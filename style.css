@@ -1,0 +1,25 @@
+*{
+   max-height: 1024px;
+}
+header{
+    height: 100%;
+    width: 120px;
+}
+#topMenu{
+    height: 100%;
+    width: 30px;
+}
+#topMenu nav ul li{
+    display: inline;
+}
+#head{
+    heigth: 100%;
+    width: 90px;
+}
+#head img.logo{
+    float: right;
+    height: 246px;
+    width: 80px;
+    margin-left: 10px;
+}
+.search
