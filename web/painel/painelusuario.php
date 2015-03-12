@@ -3,9 +3,9 @@
     <?php include '../aside.php' ?>
     <h1> Paínel do Usuário </h1>
     <ul class="painelusuario">
-        <li> Meus Uploads </li>
-        <li> Meu Cadastro </li>
-        <li> Minha lista de desejos </li>
+        <li> <a href="meusuploads.php"> Meus Uploads </a> </li>
+        <li> <a href="cadastro.php"> Meu Cadastro </a> </li>
+        <li> <a href="listadesejos.php" Minha lista de desejos </a> </li>
     </ul>
 </body>
 <footer>
