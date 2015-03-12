@@ -1,5 +1,5 @@
-<?php include 'header.php'?>
-<?php include 'aside.php'?>
+<?php include '../header.php'?>
+<?php include '../aside.php'?>
         <section>
             <div>
                 <form name="cadastro">
@@ -46,5 +46,5 @@
             </div>
       </section>
    </body>
-<?php include 'footer.php'?>
+<?php include '../footer.php'?>
 </html>
