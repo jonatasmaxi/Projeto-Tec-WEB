@@ -1,5 +1,10 @@
 <?php include '../header.php'?>
 <?php include '../aside.php'?>
+    <head>
+        <title> Fomulário de Cadastro </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
         <section>
             <div>
                 <form name="cadastro">
