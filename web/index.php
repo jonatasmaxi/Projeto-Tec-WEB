@@ -1,13 +1,7 @@
 <?php include 'header.php'?>
         <section>
             <button onclick="#"></button>
-            <aside>
-                <nav class="departments">
-                    <ul>
-                        <li></li>
-                    </ul>
-                </nav>
-            </aside>
+            <?php include 'aside.php'?>
             <div class="slide">
                 
             </div>
