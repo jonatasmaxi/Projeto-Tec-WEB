@@ -1,5 +1,6 @@
-<?php include '../header.php'; ?>
+<?php include '../header.php' ?>
 <body>
+    <?php include '../aside.php' ?>
     <h1> Paínel do Usuário </h1>
     <ul class="painelusuario">
         <li> Meus Uploads </li>
@@ -8,6 +9,6 @@
     </ul>
 </body>
 <footer>
-    <?php include '../footer.php';?>
+    <?php include '../footer.php'?>
 </footer>
 
