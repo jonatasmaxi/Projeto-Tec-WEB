@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sem nome</title>
+        <title> Cheaper </title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
