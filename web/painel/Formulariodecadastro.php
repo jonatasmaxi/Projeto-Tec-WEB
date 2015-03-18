@@ -3,11 +3,12 @@
     <body>
         <section>
             <div>
-                <form name="cadastro">
-                    <label for="nome"> Nome*: </label> <input type="text" id="nome"><br><br>
+                <form name="cadastro" id="form" method="post" action="recebe_dados.php">
+                    <label for="nome"> Nome*: </label> <input type="text" id="nome" name="nome"><br><br>
                     <label for="sobrenome"> Sobrenome*: </label> <input type="text" id="sobrenome"> <br><br>
+                    <label for="foto"> Foto: </label> <input type="file" id="foto"> <br> <br>
                     Sexo*: <input type="radio" value="masculino"> Masculino  <input type="radio" value="feminino"> Feminino <br><br>
-                    <label for="nascimento"> Data de Nascimento:* </label><input type="text" id="nascimento"><BR> <BR>
+                    <label for="nascimento"> Data de Nascimento:* </label><input type="date" id="nascimento"><BR> <BR>
                     Estado: <select name="estado">
                         <option value="AC"> AC </option>
                         <option value="AL"> AL </option>
@@ -42,7 +43,7 @@
                     <label for="senha"> Senha*: </label> <input type="password" id="senha"><br><br>
                     <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" id="confirmasenha">
                     <br> <br> <input type="button" value="Enviar"> 
-                    <input type="button" value="Cancelar"> 
+                    <input type="button" value="Cancelar">
                 </form>
             </div>
       </section>
