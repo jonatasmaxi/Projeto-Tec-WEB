@@ -32,4 +32,5 @@
                 </table>
             </div>
         </section>
+<?php include 'aside.php'?>
 <?php include 'footer.php'?>
