@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Cheaper </title>
+        <title>Coink </title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>

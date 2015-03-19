@@ -1,5 +1,5 @@
 <aside>
-    <nav class="departments">
+    <nav class="menuDepartments">
         <ul>
             <li>Games
                 <ul>

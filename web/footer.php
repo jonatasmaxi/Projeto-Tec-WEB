@@ -1,9 +1,14 @@
 <footer>
             <div class="copyright">
+                Copyright Coink © 2015
             </div>    
-            <nav>
+            <nav class="menuFooter">
                 <ul>
-                    <li></li>
+                    <li>Política de privacidade</li>
+                    <li>Mapa do site</li>
+                    <li>Quem somos</li>
+                    <li>Contato</li>
+                    <li>Ajuda</li>
                 </ul>
             </nav>
         </footer>
