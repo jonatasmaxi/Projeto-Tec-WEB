@@ -12,6 +12,10 @@
         </select>
         <table>
             <?php 
+            include "connector_mysql.php";
+            $sql = "SELECT cod,nome,preco FROM produto";
+            $resultado = mysqli_query($conexao,$sql) or die("Não foi possível executar a SQL: ");
+            mysqli_close($conexao);
             echo"<tr>";
             for($i=0;$i<$v.length;$i++){
                if($i % 3 == 0){
