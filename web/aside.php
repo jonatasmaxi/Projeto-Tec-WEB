@@ -25,6 +25,7 @@
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
+                            <li>COisa
                         </ul>
                     </li>
                     <li>Nintendo Wii U
