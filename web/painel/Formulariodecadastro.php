@@ -1,6 +1,41 @@
 <?php include '../header.php'?>
 <?php include '../aside.php'?>
     <body>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("input").blur(function(){
+                 if($(this).val() == "" )''
+                     {
+                         $(this).css({"border-color" : "#F00", "padding": "2px"});
+                     }
+                });
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("input").blur(function(){
+                 if($(this).val() == "")
+                     {
+                         $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                     }
+                });
+                $("#botao").click(function(){
+                 var cont = 0;
+                 $("#form input").each(function(){
+                     if($(this).val() == "")
+                         {
+                             $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                             cont++;
+                         }
+                    });
+                 if(cont == 0)
+                     {
+                         $("#form").submit();
+                     }
+                });
+            });
+        </script>
         <section>
             <div>
                 <form name="cadastro" id="form" method="post" action="Formulariodecadastro.php">
@@ -42,31 +77,9 @@
                     <label for="email">E-mail*: </label> <input type="text" name="email" id="email"><br><br>
                     <label for="senha"> Senha*: </label> <input type="password" name="senha" id="senha"><br><br>
                     <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" name="confirmasenha"id="confirmasenha">
-                    <br> <br> <input type="submit" value="Enviar"> 
+                    <br> <br> <input type="button" id="button" value="Enviar"> 
                     <input type="button" value="Cancelar">
-                    <?php 
-                        $erro=0;
-                        $nome = $_POST["nome"];
-                        $sobrenome = $_POST["sobrenome"];
-                        $cidade = $_POST["cidade"];
-                        $senha = $_POST["senha"];
-                        $confirmasenha = $_POST["confirmasenha"] ;
-                        $nascimento = $_POST['nascimento'];
-                        $email = $_POST['email'];
-                        if (empty($nome) )
-                           {echo "O campo nome não pode estar vazio.<br>"; $erro++;}
-                        if (empty($sobrenome))
-                          {echo "O campo sobrenome não pode estar vazio.<br>"; $erro++;}
-                        if (empty($cidade))
-                          {echo "O campo cidade não pode estar vazio.<br>"; $erro++;}
-                        if (empty($senha))
-                          {echo "O campo senha não pode estar vazio.<br>"; $erro++;}
-                        if (empty($confirmasenhasenha))
-                          {echo "O campo confirma a senha não pode estar vazio.<br>"; $erro++;}
-                        if (empty($email))
-                           {echo "O campo email não pode estar vazio.<br>"; $erro++;}
-
-                    ?>
+             
                 </form>
             </div>
       </section>
