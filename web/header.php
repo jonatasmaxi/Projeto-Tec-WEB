@@ -24,13 +24,16 @@
                 <div class="searchBar">
                     <form class="search">
                         <fieldset>
-                            <input type="text" value="Entre com a pesquisa" size="30" id="search" name="search">
+                            <input type="text" value="Entre com a pesquisa" size="67%" id="search" name="search">
                             <input type="submit" class="search-submit" value="Pesquisar">
                         </fieldset>
                     </form>
                 </div>
                 <div class="login">
+                    Olá, visitante!
                 </div>
-                <img src="#" href="#" title="Carrinho"/>
+                <div class="carrinho">
+                    <img src="#" href="#" title="Carrinho"/>
+                </div>
             </div>
         </header>
