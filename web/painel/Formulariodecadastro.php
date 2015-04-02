@@ -12,30 +12,6 @@
                 });
             })
         </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("input").blur(function(){
-                 if($(this).val() == "")
-                     {
-                         $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                     }
-                });
-                $("#botao").click(function(){
-                 var cont = 0;
-                 $("#form input").each(function(){
-                     if($(this).val() == "")
-                         {
-                             $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                             cont++;
-                         }
-                    });
-                 if(cont == 0)
-                     {
-                         $("#form").submit();
-                     }
-                });
-            });
-        </script>
         <section>
             <div>
                 <form name="cadastro" id="form" method="post" action="Formulariodecadastro.php">
@@ -79,10 +55,43 @@
                     <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" name="confirmasenha"id="confirmasenha">
                     <br> <br> <input type="button" id="button" value="Enviar"> 
                     <input type="button" value="Cancelar">
-             
                 </form>
             </div>
       </section>
    </body>
 <?php include '../footer.php'?>
+       <script type="text/javascript">
+            $(document).ready(function(){
+                $("input").blur(function(){
+                 if($(this).val() == "")
+                     {
+                         $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                     }
+                 else
+                     {
+                         $(this).css({"border" : "1px solid black", "padding": "2px"});
+                     }
+                });
+                $("#confirmasenha").blur(function(){
+                    if(($("#confirmasenha").val() != $("#senha").val())){
+                        $("#confirmasenha").css({"border" : "1px solid #F00", "padding": "2px"});
+                        cont++;
+                    }   
+                });
+                $("#botao").click(function(){
+                 var cont = 0;
+                 $("#form input").each(function(){
+                     if($(this).val() == "")
+                         {
+                             $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                             cont++;
+                         }
+                    });
+                 if(cont == 0)
+                     {
+                         $("#form").submit();
+                     }
+                });
+            });
+        </script>
 </html>
