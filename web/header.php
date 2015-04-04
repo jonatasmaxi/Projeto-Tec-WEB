@@ -20,7 +20,9 @@
                 </nav>
             </div>
             <div id="head">
-                <img class="logo" src="#" href="#" title="Nome do site"/>
+                <div class="logo">
+                    <img src="#" href="#" title="Nome do site"/>
+                </div>
                 <div class="searchBar">
                     <form class="search">
                         <fieldset>

@@ -4,11 +4,12 @@
 #site{
     max-width: 1024px;
     margin: 0 auto;
-    
+    min-height: 100%;
+    position: relative;
 }
 body{
     width: 100%;
-    height: 100%;
+    padding-bottom: 50px;
 }
 header{
     width: 100%;
@@ -16,6 +17,7 @@ header{
     background-color: #EEE;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 #topMenu{
@@ -32,10 +34,11 @@ header{
 #topMenu nav ul{
     text-decoration: none;
     display: block;
-    width: 100%
-    height: 100%;
+    width: 100%;
     padding: 0;
-    padding-top: 7px;
+     position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 }
 
 #topMenu nav ul li{
@@ -52,32 +55,80 @@ header{
     height: 90px;
     background-color: #FFB52A;
 }
-#head img.logo{
+#head .logo{
     float: left;
     width: 16%;
-    height: 80px;
     margin-left: 1%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 }
 #head .searchBar{
     float: left;
     width: 60%;
-    height: 80px;
     margin-left: 1%;
-    margin-top: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 }
 #head .login{
     margin-left: 1%;
     float: left;
     width: 8%;
-    margin-top:20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 }
 #head .carrinho{
     margin-left: 1%;
     float: left;
     width: 8%;
-    margin-top: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    
 }
 section{ 
     width: 100%;
-    border: 1px solid #000;
+}
+.content{
+    width: 75%;
+    float: right;
+}
+aside{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+.slide{
+    float: left;
+    width: 100%;
+}
+.gridLast{
+    float: left;
+    width: 100%;
+}
+.tableLast tr.tableLastHeader{
+    width: 100%;
+}
+.tableLast tr.tableLastProduct{
+    width: 100%;
+}
+.tableLast tr.tableLastProduct td{
+    width: 33.3%;
+}
+.topUsers{
+    float: left;
+    width: 100%;
+}
+.topUsers tr.topUsersHeader{
+    width: 100%;
+}
+.topUsers tr.tableUsersTop{
+    width: 100%;
+}
+.topUsers tr.tableUsersTop td{
+    width: 33%;
+}
+.footer{
 }
