@@ -1,5 +1,6 @@
 <?php include '../header.php'?>
 <?php include '../aside.php'?>
+<link rel="stylesheet" type="text/css" href="../style.css">
     <body>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
         <script type="text/javascript">
@@ -17,10 +18,11 @@
                 <form name="cadastro" id="form" method="post" action="Formulariodecadastro.php">
                     <label for="nome"> Nome*: </label> <input type="text" id="nome" name="nome"><br><br>
                     <label for="sobrenome"> Sobrenome*: </label> <input type="text" name="sobrenome" id="sobrenome"> <br><br>
-                    <label for="foto"> Foto: </label> <input type="file" id="foto"> <br> <br>
+                    <label for="foto"> Foto*: </label> <input type="file" id="foto"> <br> <br>
                     Sexo*: <input type="radio" value="masculino"> Masculino  <input type="radio" value="feminino"> Feminino <br><br>
                     <label for="nascimento"> Data de Nascimento:* </label><input type="date" name="nascimento" id="nascimento"><BR> <BR>
-                    Estado: <select name="estado">
+                    Estado*: <select name="estado">
+                        <option value=" "> </option>
                         <option value="AC"> AC </option>
                         <option value="AL"> AL </option>
                         <option value="AP"> AP </option>
@@ -53,7 +55,7 @@
                     <label for="email">E-mail*: </label> <input type="text" name="email" id="email"><br><br>
                     <label for="senha"> Senha*: </label> <input type="password" name="senha" id="senha"><br><br>
                     <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" name="confirmasenha"id="confirmasenha">
-                    <br> <br> <input type="button" id="button" value="Enviar"> 
+                    <br> <br> <input type="button" id="botao" value="Enviar"> 
                     <input type="button" value="Cancelar">
                 </form>
             </div>

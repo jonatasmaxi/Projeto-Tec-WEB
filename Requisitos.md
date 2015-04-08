@@ -5,20 +5,6 @@ Jonatas Alvarenga Maximiano TIA: 41404998
 Lucas Rezende Tedeschi TIA: 41406133
 Rubens Gondek TIA: 41411978
 
-CREATE DATABASE Coink;
-USE DATABASE 
-
-CREATE TABLE Produto
-(
-codProduto int NOT NULL,
-nome varchar(50) NOT NULL,
-categoria varchar(50) NOT NULL,
-marca varchar(50) NOT NULL,
-descricao varchar(500),
-especificacao varchar(500),
-PRIMARY KEY (codProduto)
-)
-
 # Home
 1. Página Inicial
 *  Cabeçalho
