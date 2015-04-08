@@ -8,8 +8,7 @@
                     <div class="gridLast">
                         <table class="tableLast">
                             <tr class="tableLastHeader">
-                                <th colspan="2">Últimos produtos adicionados<th>
-                                <th></th>    
+                                <th colspan="3">Últimos produtos adicionados</th>
                             </tr>
                             <tr class="tableLastProduct">
                                 <td>
@@ -33,8 +32,7 @@
                     <div class="topUsers">
                         <table class="tableUsers">
                             <tr class="tableUsersHeader">
-                                <th colspan="2">Top usuários<th>
-                                <th></th>    
+                                <th colspan="3">Top usuários</th>  
                             </tr>
                             <tr class="tableUsersTop">
                                 <td>

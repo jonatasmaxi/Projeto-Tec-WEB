@@ -21,7 +21,7 @@
             </div>
             <div id="head">
                 <div class="logo">
-                    <img src="#" href="#" title="Nome do site"/>
+                    <img src="images/PigVuador.png" href="#" title="Nome do site"/>
                 </div>
                 <div class="searchBar">
                     <form class="search">

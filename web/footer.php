@@ -1,4 +1,4 @@
-<footer>
+<footer id="footerSite">
             <div class="copyright">
                 Copyright Coink © 2015
             </div>    

@@ -4,12 +4,12 @@
 #site{
     max-width: 1024px;
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 700px;
+    display: table;
     position: relative;
 }
 body{
     width: 100%;
-    padding-bottom: 50px;
 }
 header{
     width: 100%;
@@ -52,12 +52,16 @@ header{
 }
 #head .logo{
     float: left;
-    width: 17%;
     margin-left: 1%;
     position: relative;
     top: 50%;
+    width: 17%;
     transform: translateY(-50%); 
 }
+#head .logo img{
+    width: 100%;
+    float: left;
+}   
 #head .searchBar{
     float: left;
     width: 52%;
@@ -125,6 +129,7 @@ fieldset .botao input{
 }
 section{ 
     width: 100%;
+    display: table;
 }
 .content{
     width: 75%;
@@ -142,7 +147,13 @@ aside{
 .gridLast{
     float: left;
     width: 100%;
+    margin-top: 5%;
 }
+.gridLast table tr th{
+    padding: 2%;
+    text-align: left;
+    border-top: 2px solid Black;
+} 
 .tableLast tr.tableLastHeader{
     width: 100%;
 }
@@ -155,6 +166,12 @@ aside{
 .topUsers{
     float: left;
     width: 100%;
+    margin-top: 5%;
+}
+.topUsers table tr th{
+    padding: 2%;
+    text-align: left;
+    border-top: 2px solid Black;
 }
 .topUsers tr.topUsersHeader{
     width: 100%;
@@ -165,5 +182,9 @@ aside{
 .topUsers tr.tableUsersTop td{
     width: 33%;
 }
-.footer{
+#footerSite{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: #777777;
 }
