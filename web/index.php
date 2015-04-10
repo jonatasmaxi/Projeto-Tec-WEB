@@ -6,7 +6,7 @@
                        <div class="area-total-abas">
                             <div class="abas">
                                 <input type="radio" name="lista-abas" checked id="aba1" class="aba1"> <!-- checked especifica que o slide começa na aba 1 -->
-                                <label for="aba1"><span><span>Personagens</span></span></label> <!-- nome da aba 1 -->
+                                <label for="aba1"><span><span>Moto E</span></span></label> <!-- nome da aba 1 -->
                                 <input type="radio" name="lista-abas" id="aba2" class="aba2">
                                 <label for="aba2"><span><span>Locais</span></span></label>  <!-- nome da aba 2-->
                                 <input type="radio" name="lista-abas" id="aba3" class="aba3">
@@ -16,30 +16,38 @@
                                 <ul>
                                     <li class="aba1">
                                             <div class="conteudo">
-                                                    <h1>Personagens</h1> <!-- título da aba 1-->
+                                                <div class="conteudo-texto">
+                                                    <h1>Smartphone Motorola Moto E 2ª Geração Colors</h1> <!-- título da aba 1-->
                                                     <br>
-                                                    <p>Conteúdo personagens</p> <!-- conteúdo da aba 1-->
+                                                    <p>R$ 699,00</p> <!-- conteúdo da aba 1-->
+                                                </div>
                                             </div>
                                     </li>
                                     <li class="aba2">
                                             <div class="conteudo">
+                                                <div class="conteudo-texto">
                                                     <h1>Locais</h1> <!-- título da aba 2 -->
                                                     <br>
                                                     <p>Conteúdo Locais</p> <!--conteúdo da aba 2-->
+                                                </div>
                                             </div>
                                     </li>
                                     <li class="aba3">
                                             <div class="conteudo">
+                                                <div class="conteudo-texto">
                                                     <h1>Quotes</h1> <!--título da aba 3-->
                                                     <br>
                                                     <p>Conteúdo quotes</p> <!--conteúdo da aba 3-->
+                                                </div>
                                             </div>
                                     </li>
                                     <li class="aba4">
                                             <div class="conteudo">
+                                                <div class="conteudo-texto">
                                                     <h1>Soundtrack</h1> <!--título da aba 4-->
                                                     <br>
                                                     <p>Conteúdo soundtrack</p> <!-- conteúdo da aba 4-->
+                                                </div>
                                             </div>
                                     </li>
                                 </ul>
