@@ -188,3 +188,93 @@ aside{
     bottom: 0;
     background-color: #777777;
 }
+.abas, .abas * { /** margem, borda, padding zerados para evitar conflitos **/
+        margin:0;
+        padding:0;
+        outline:none;
+        border:0;
+}
+.abas { /** padrão da classe abas **/
+        position:relative;
+        font-size:0;
+        text-align:left;
+        color:#000;
+}
+.abas > input { /** posição dos inputs (abas) **/
+        position:absolute;
+        display:none;
+}
+.abas > label { /** estilo do texto nos inputs (abas)**/
+        position:relative;
+        z-index:1;
+        display:inline-block;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        padding:1px;
+        padding-top:0;
+        padding-left:0;
+        font-size:19px;
+        line-height:45px;
+        cursor:pointer;
+}
+.abas > label span { /** estilo da aba quando não selecionada **/
+        display:block;
+        padding:10px;
+        background:#fff;
+}
+.abas > label span span { /** efeito ao selecionar aba **/
+        padding:0 15px;
+        background:transparent;
+        transition:background .5s, color .4s;
+        -o-transition:background .5s, color .4s;
+        -ms-transition:background .3s, color .4s;
+        -moz-transition:background .5s, color .4s;
+        -webkit-transition:background .5s, color .4s;
+}
+.abas > label:hover span span { /** estilo da aba com mouse por cima **/
+        background:#000;
+        color:#fff;
+}
+.abas > input:checked + label span span { /** estilo da aba quando selecionada **/
+        background:Red;
+        color:#fff;
+}
+.conteudo { /**o que aparece dentro de cada aba**/
+        width:600px;
+        position:relative;
+        line-height:20px
+}
+.abas > ul { /** estilo da lista (conteudo da aba) **/
+        list-style:none;
+        position:relative;
+        display:block;
+        font-size:18px;
+}
+.abas > ul > li { /** estilo de cada conteudo da aba e efeito ao mudar **/
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        overflow:auto;
+        padding:30px 35px 35px;
+        background:#fff;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        opacity:0;
+        -o-transform-origin:0% 0%;
+        -ms-transform-origin:0% 0%;
+        -moz-transform-origin:0% 0%;
+        -webkit-transform-origin:0% 0%;
+        -o-transition:opacity .5s, -o-transform .5s;
+        -ms-transition:opacity .5s, -ms-transform .5s;
+        -moz-transition:opacity .5s, -moz-transform .5s;
+        -webkit-transition:opacity .5s, -webkit-transform .5s
+}
+.abas > .aba1:checked ~ ul > .aba1, 
+.abas > .aba2:checked ~ ul > .aba2, 
+.abas > .aba3:checked ~ ul > .aba3, 
+.abas > .aba4:checked ~ ul > .aba4 { /** Especificações de cada aba sobre posicionamento **/
+ position:relative;
+ z-index:1;
+ opacity:1;
+}
