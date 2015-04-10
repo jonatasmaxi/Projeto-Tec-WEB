@@ -1,7 +1,7 @@
-<?php include '../header.php' ?>
+<?php include 'header.php' ?>
 <head>
 <body>
-    <?php include '../aside.php' ?>
+    <?php include 'aside.php' ?>
     <section>   
         <h1> Paínel do Usuário </h1>
         <ul class="painelusuario">
@@ -12,6 +12,6 @@
     </section>
 </body>
 <footer>
-    <?php include '../footer.php'?>
+    <?php include 'footer.php'?>
 </footer>
 

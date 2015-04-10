@@ -1,6 +1,6 @@
-<?php include '../header.php'?>
-<?php include '../aside.php'?>
-<link rel="stylesheet" type="text/css" href="../style.css">
+<?php include 'header.php'?>
+<?php include 'aside.php'?>
+<link rel="stylesheet" type="text/css" href="style.css">
     <body>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
         <script type="text/javascript">
@@ -15,7 +15,7 @@
         </script>
         <section>
             <div>
-                <form name="cadastro" id="form" method="post" action="Formulariodecadastro.php">
+                <form name="cadastro" id="form" method="post" action="painel_form_cadastro.php">
                     <label for="nome"> Nome*: </label> <input type="text" id="nome" name="nome"><br><br>
                     <label for="sobrenome"> Sobrenome*: </label> <input type="text" name="sobrenome" id="sobrenome"> <br><br>
                     <label for="foto"> Foto*: </label> <input type="file" id="foto"> <br> <br>
@@ -61,7 +61,7 @@
             </div>
       </section>
    </body>
-<?php include '../footer.php'?>
+<?php include 'footer.php'?>
        <script type="text/javascript">
             $(document).ready(function(){
                 $("input").blur(function(){

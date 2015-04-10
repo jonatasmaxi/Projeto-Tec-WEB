@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html>
-<?php include '../header.php'?>
-<?php include '../aside.php'?>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+<?php include 'header.php'?>
+<?php include 'aside.php'?>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <body>
         <div>
-            <form name="cadastroproduto" method="post" action="Formulariodecadastroproduto.php" id="form">
+            <form name="cadastroproduto" method="post" action="painel_form_cadastro_produto.php" id="form">
                 <label for="nomeproduto"> Nome do Produto: </label><input type="text"id="nomeproduto" name="nomeproduto"> <br> <br> 
                 <label for="nomeloja"> Loja: </label> <input type="text" id="nomeloja" name="nomeloja"><br> <br>
                 <label for="enderecoloja"> Endereço da loja: </label><input type="text" id="enderecoloja" name="enderecoloja"> 
