@@ -140,6 +140,10 @@ aside{
     width: 25%;
     position: relative;
 }
+.menuDepartments{
+    margin-top: 7%;
+    margin-right: 10%;
+}
 .slide{
     float: left;
     width: 100%;
@@ -184,9 +188,12 @@ aside{
 }
 #footerSite{
     width: 100%;
+    margin-top: 40px; 
     height: auto;
     bottom: 0;
-    background-color: #777777;
+    background-color: #1C1C1C;
+    padding: 2%;
+    color: #fff;
 }
 .abas, .abas * { /** margem, borda, padding zerados para evitar conflitos **/
     margin:0;
@@ -344,4 +351,7 @@ aside{
  position:relative;
  z-index:1;
  opacity:1;
+}
+th{
+    font-size: 20px;
 }
