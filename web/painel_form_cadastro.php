@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE HTML>
 <?php include 'header.php'?>
 <?php include 'aside.php'?>
 <link rel="stylesheet" type="text/css" href="style.css">
