@@ -10,10 +10,9 @@
         <section>
             <div>
                 <form name="formcadastro2" id="formcadastro2" method="POST" action="painel_form_cadastro3.php">
-                    <label for="user"> Usuário*: </label><input type="text" pattern="[a-zA-Z0-9]+" required id="user" name="user" placeholder="Escolha um nome de usuário"> Somente letras e números <br><br>
-                    <label for="senha"> Senha*: </label> <input type="password" id="senha" placeholder="Escolha uma senha" name="senha"><br><br>
-                    <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" value="" placeholder="Repita a senha" id="confirmasenha" name="confirmasenha">
-                    <br> <br> <input type="submit" id="botao" value="Enviar"> 
+                    <label for="senha"> Senha*: </label> <input type="password" id="senha" required placeholder="Escolha uma senha" name="senha"><br><br>
+                    <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" required placeholder="Repita a senha" id="confirmasenha" name="confirmasenha">
+                    <br> <br> <input type="button" id="botao" value="Enviar"> 
                     <input type="button" value="Cancelar">
                 </form>
             </div>
@@ -39,6 +38,7 @@
                  if($(this).val() == "")
                      {
                          $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                         cont++;
                      }
                  else
                      {
@@ -65,4 +65,21 @@
                      }
                 });
             });
+</script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script>
+// just for the demos, avoids form submit
+    jQuery.validator.setDefaults({
+      debug: true,
+      success: "valid"
+    });
+    $( "#formcadastro2" ).validate({
+      rules: {
+        senha: {
+          minlength: 6
+        }
+      }
+    });
 </script>
