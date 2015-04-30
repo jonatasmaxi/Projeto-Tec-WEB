@@ -21,65 +21,46 @@
 <?php include 'footer.php'?>
 </html>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript">
-            $(document).ready(function(){
-                $("input").blur(function(){
-                 if($(this).val() == "" )''
-                     {
-                         $(this).css({"border-color" : "#F00", "padding": "2px"});
-                     }
-                });
-            })
- </script>
- <script type="text/javascript">
-            var cont = 0;
-            $(document).ready(function(){
-                $("input").blur(function(){
-                 if($(this).val() == "")
-                     {
-                         $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                         cont++;
-                     }
-                 else
-                     {
-                         $(this).css({"border" : "1px solid black", "padding": "2px"});
-                     }
-                });
-                $("#confirmasenha").blur(function(){
-                    if(($("#confirmasenha").val() != $("#senha").val())){
-                        $("#confirmasenha").css({"border" : "1px solid #F00", "padding": "2px"});
-                        cont++;
-                    }   
-                });
-                $("#botao").click(function(){
-                 $("#formcadastro2 input").each(function(){
-                     if($(this).val() == "")
-                         {
-                             $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                             cont++;
-                         }
-                    });
-                 if(cont == 0)
-                     {
-                         $("#formcadastro2").submit();
-                     }
-                });
-            });
-</script>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/jquery­1.11.1.min.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional­methods.min.js"></script>
 <script>
-// just for the demos, avoids form submit
-    jQuery.validator.setDefaults({
-      debug: true,
-      success: "valid"
-    });
-    $( "#formcadastro2" ).validate({
-      rules: {
-        senha: {
-          minlength: 6
+
+    jQuery(function(){
+
+        $("#botao").click(function(){
+
+        $(".error").hide();
+
+        var hasError = false;
+
+        var passwordVal = $("#senha").val();
+
+        var checkVal = $("#confirmasenha").val();
+
+        if (passwordVal == '') {
+
+            $("#senha").after('<span class="error">Digite uma senha.</span>');
+
+            hasError = true;
+
+        } else if (checkVal == '') {
+
+            $("#confirmasenha").after('<span class="error">Repita a sua senha.</span>');
+
+            hasError = true;
+
+        } else if (passwordVal != checkVal ) {
+
+            $("#confirmasenha").after('<span class="error">Senhas não conferem .</span>');
+
+            hasError = true;
+
         }
-      }
+
+        if(hasError == true) {return false;}
+
     });
+
+});
 </script>
