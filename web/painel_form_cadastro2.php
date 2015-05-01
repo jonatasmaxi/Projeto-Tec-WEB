@@ -5,8 +5,7 @@
     echo $_POST['email'];
  ?>
     <section>
-        <?php include 'aside.php'?>
-        <div class="content">
+        <div class="content-full">
             <form name="formcadastro2" id="formcadastro2" method="POST" action="painel_form_cadastro3.php">
                 <label for="senha"> Senha*: </label> <input type="password" id="senha" required placeholder="Escolha uma senha" name="senha"><br><br>
                 <label for="confirmasenha"> Confirme a Senha*: </label> <input type="password" required placeholder="Repita a senha" id="confirmasenha" name="confirmasenha">

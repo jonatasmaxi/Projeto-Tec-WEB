@@ -7,8 +7,7 @@
     echo $_POST['user'];
  ?>
     <section>
-        <?php include 'aside.php'?>
-        <div class="content">
+        <div class="content-full">
 
             <form name="formcadastro2" id="formcadastro2" method="POST" action="painel_form_cadastro4.php">
                     <label for="imagem"> Escolha uma imagem para seu perfil: </label> <input type="file" id="imagem" accept="image/*"  name="imagem"><br><br>

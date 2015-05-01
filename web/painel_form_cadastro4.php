@@ -1,8 +1,7 @@
 <?php include 'connector_mysql.php'?>
 <?php include 'header.php'?>
     <section>
-        <?php include 'aside.php'?>
-        <div class="content">
+        <div class="content-full">
             <h1>
                 Cadastro Realizado com Sucesso <br> <br>
             </h1>
