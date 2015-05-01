@@ -1,13 +1,7 @@
-<script>
-    $('.has-sub').click( function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('tap');
-});
-</script>
 <aside>
     <nav class="menuDepartments">
         <ul class="egmenu">
-            <li><a href="#" class="has-sub">Games</a>
+            <li><a href="#">Games</a>
                 <ul>
                     <li><a href="#" class="has-sub">Xbox One</a>
                         <ul>
@@ -31,7 +25,7 @@
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
-                            <li>COisa
+                            <li>Coisa</li>
                         </ul>
                     </li>
                     <li><a href="#" class="has-sub">Nintendo Wii U</a>

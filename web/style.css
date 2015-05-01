@@ -121,7 +121,7 @@ fieldset .botao input{
 #head .login p{
     float: left;
     text-align: left;
-    margin-left: 4%;
+    margin-left: 3%;
 }
 #head .carrinho{
     margin-left: 1%;
@@ -139,19 +139,29 @@ fieldset .botao input{
 #head .carrinho p{
     float: left;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 5%;
 }
 section{ 
     width: 100%;
+    position: relative;
     display: table;
+    
 }
 .content{
-    width: 75%;
+    width: 70%;
     float: right;
+    position: relative;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-left:  2%;
+    padding-top: 1%;
 }
 aside{
     float: left;
-    width: 25%;
+    width: 24%;
+    padding-left: 1%;
+    padding-right:  1%;
+    padding-bottom: 2%;
     position: relative;
 }
 .menuDepartments{
@@ -371,34 +381,45 @@ aside{
 th{
     font-size: 20px;
 }
-ul.egmenu {  
-    background: #333; 
+nav.menuDepartments ul.egmenu {  
+    background: #eee; 
     height: auto;
     width: 100%; 
 }
 
-ul.egmenu > li { 
+nav.menuDepartments ul.egmenu > li { 
     float: none; 
     position: relative;  
     width: 100%;
+    transition:background .5s, color .4s;
+    -o-transition:background .5s, color .4s;
+    -ms-transition:background .3s, color .4s;
+    -moz-transition:background .5s, color .4s;
+    -webkit-transition:background .5s, color .4s;
 }
-
-ul.egmenu ul {
-    background: #444; 
+nav.menuDepartments ul.egmenu ul {
+    background: #eee; 
     display: none; 
     position: relative;
     left: 0; top: 100%;
 }
-
-ul.egmenu a { 
+nav.menuDepartments ul.egmenu a { 
     cursor: pointer; 
     display: block; 
-    color: white; 
     line-height: 40px; 
-    padding: 0 10px; 
+    padding: 0 0px; 
 }
-
-ul.egmenu li { list-style: none; }
-
-ul.egmenu li:hover { background: #555;  }
-ul.egmenu li:hover ul { display: block;  }
+nav.menuDepartments ul.egmenu li { 
+    list-style: none; 
+}
+nav.menuDepartments ul.egmenu li:hover { 
+    background: #c3c3c3; 
+    transition:background .5s, color .4s;
+    -o-transition:background .5s, color .4s;
+    -ms-transition:background .3s, color .4s;
+    -moz-transition:background .5s, color .4s;
+    -webkit-transition:background .5s, color .4s;
+}
+nav.menuDepartments ul.egmenu li:hover ul { 
+    display: block;
+}
