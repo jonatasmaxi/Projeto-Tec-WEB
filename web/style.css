@@ -16,9 +16,11 @@ h6 { font-size: 0.60em;font-weight: normal;}
     min-height: 700px;
     display: table;
     position: relative;
+    background-color: #fff;
 }
 body{
     width: 100%;
+    background-color: #EEE;
 }
 header{
     width: 100%;
@@ -207,7 +209,6 @@ aside{
     height: auto;
     bottom: 0;
     background-color: #1C1C1C;
-    padding: 2%;
     color: #fff;
 }
 .abas, .abas * { /** margem, borda, padding zerados para evitar conflitos **/
@@ -370,3 +371,34 @@ aside{
 th{
     font-size: 20px;
 }
+ul.egmenu {  
+    background: #333; 
+    height: auto;
+    width: 100%; 
+}
+
+ul.egmenu > li { 
+    float: none; 
+    position: relative;  
+    width: 100%;
+}
+
+ul.egmenu ul {
+    background: #444; 
+    display: none; 
+    position: relative;
+    left: 0; top: 100%;
+}
+
+ul.egmenu a { 
+    cursor: pointer; 
+    display: block; 
+    color: white; 
+    line-height: 40px; 
+    padding: 0 10px; 
+}
+
+ul.egmenu li { list-style: none; }
+
+ul.egmenu li:hover { background: #555;  }
+ul.egmenu li:hover ul { display: block;  }

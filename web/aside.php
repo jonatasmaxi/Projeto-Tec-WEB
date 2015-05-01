@@ -1,34 +1,40 @@
+<script>
+    $('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+</script>
 <aside>
     <nav class="menuDepartments">
-        <ul>
-            <li><a>Games</a>
+        <ul class="egmenu">
+            <li><a href="#" class="has-sub">Games</a>
                 <ul>
-                    <li>Xbox One
+                    <li><a href="#" class="has-sub">Xbox One</a>
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
                         </ul>
                     </li>
-                    <li>Xbox 360
+                    <li><a href="#" class="has-sub">Xbox 360</a>
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
                         </ul>
                     </li>
-                    <li>PlayStation 4
+                    <li><a href="#" class="has-sub">PlayStation 4</a>
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
                         </ul>
                     </li>
-                    <li>PlayStation 3
+                    <li><a href="#" class="has-sub">PlayStation 3</a>
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
                             <li>COisa
                         </ul>
                     </li>
-                    <li>Nintendo Wii U
+                    <li><a href="#" class="has-sub">Nintendo Wii U</a>
                         <ul>
                             <li>Acessórios</li>
                             <li>Jogos</li>
@@ -36,14 +42,14 @@
                     </li>
                 </ul>
             </li>
-            <li>Portáteis
+            <li><a href="#" class="has-sub">Portáteis</a>
                 <ul>
                     <li>Celulares e Smartphones</li>
                     <li>Tablets</li>
                     <li>Wearables</li>
                 </ul>
             </li>
-            <li>TVs, Áudio e Eletrônicos
+            <li><a href="#" class="has-sub">TVs, Áudio e Eletrônicos</a>
                 <ul>
                     <li>TVs</li>
                     <li>Home Theaters</li>
@@ -52,13 +58,13 @@
                     <li>GPS</li>
                 </ul>
             </li>
-            <li>Informática
+            <li><a href="#" class="has-sub">Informática</a>
                 <ul>
                     <li>Notebooks</li>
                     <li>Computadores</li>
                     <li>Multifuncionais e Impressoras</li>
                     <li>GPS</li>
-                    <li>Acessórios de Informática
+                    <li><a href="#" class="has-sub">Acessórios de Informática</a>
                         <ul>
                             <li>Cartões de memória</li>
                             <li>Pendrives</li>
