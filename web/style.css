@@ -433,3 +433,8 @@ nav.menuDepartments ul.egmenu li:hover {
 nav.menuDepartments ul.egmenu li:hover ul { 
     display: block;
 }
+.orderCategory{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: right;
+}

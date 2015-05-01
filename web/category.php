@@ -4,15 +4,17 @@
     <?php include 'aside.php'?>
     <div class="content">
         <div class="headCategory">
-            <h1>Breacrumb</h1>
-            <span>Ordenar por</span> 
-            <select class="orderCategorySelector" name="orderCategory">
-                <option value="favoritados">Mais favoritados</option>
-                <option value="nomeAZ">Nome AZ</option>
-                <option value="nomeZA">Nome ZA</option>
-                <option value="menorPreco">Menor preço</option>
-                <option value="maiorPreco">Maior preço</option>
-            </select>
+            <h1>Categoria Nome</h1>
+            <div class="orderCategory">
+	            <span>Ordenar por</span>
+	            <select class="orderCategorySelector" name="orderCategory">
+	                <option value="favoritados">Mais favoritados</option>
+	                <option value="nomeAZ">Nome AZ</option>
+	                <option value="nomeZA">Nome ZA</option>
+	                <option value="menorPreco">Menor preço</option>
+	                <option value="maiorPreco">Maior preço</option>
+	            </select>
+	    </div>
             <table> 
                  <?php 
                         $sql = "SELECT * FROM Produto"; 
