@@ -1,6 +1,5 @@
 <?php include 'header.php' ?>
 <head>
-<body>
     <?php include 'aside.php' ?>
     <section>   
         <h1> Paínel do Usuário </h1>
@@ -10,8 +9,5 @@
             <li> <a href="listadesejos.php" Minha lista de desejos </a> </li>
         </ul>
     </section>
-</body>
-<footer>
-    <?php include 'footer.php'?>
-</footer>
+<?php include 'footer.php'?>
 

@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <meta charset="UTF-8">
 <?php 
      $erro=0;

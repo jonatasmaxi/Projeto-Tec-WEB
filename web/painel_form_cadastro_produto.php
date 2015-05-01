@@ -1,10 +1,7 @@
-<!DOCTYPE HTML>
-<html>
 <?php include 'header.php'?>
-<?php include 'aside.php'?>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <body>
-        <div>
+    <section>
+        <?php include 'aside.php'?>
+        <div class="content">
             <form name="cadastroproduto" method="post" action="painel_form_cadastro_produto.php" id="form">
                 <label for="nomeproduto"> Nome do Produto: </label><input type="text"id="nomeproduto" name="nomeproduto"> <br> <br> 
                 <label for="nomeloja"> Loja: </label> <input type="text" id="nomeloja" name="nomeloja"><br> <br>
@@ -45,48 +42,48 @@
                 <input type="button" name="Cancelar" value="Cancelar">
             </form>
         </div>
-    </body>
-</html>
-         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("input").blur(function(){
-                 if($(this).val() == "" )''
-                     {
-                         $(this).css({"border-color" : "#F00", "padding": "2px"});
-                     }
-                });
-            })
-            $(document).ready(function(){
-                $("input").blur(function(){
+    </section>
+<?php include 'footer.php'?>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("input").blur(function(){
+             if($(this).val() == "" )''
+                 {
+                     $(this).css({"border-color" : "#F00", "padding": "2px"});
+                 }
+            });
+        })
+        $(document).ready(function(){
+            $("input").blur(function(){
+             if($(this).val() == "")
+                 {
+                     $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                 }
+             else
+                 {
+                     $(this).css({"border" : "1px solid black", "padding": "2px"});
+                 }
+            });
+            $("#confirmasenha").blur(function(){
+                if(($("#confirmasenha").val() != $("#senha").val())){
+                    $("#confirmasenha").css({"border" : "1px solid #F00", "padding": "2px"});
+                    cont++;
+                }   
+            });
+            $("#botao2").click(function(){
+             var cont = 0;
+             $("#form input").each(function(){
                  if($(this).val() == "")
                      {
                          $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                     }
-                 else
-                     {
-                         $(this).css({"border" : "1px solid black", "padding": "2px"});
+                         cont++;
                      }
                 });
-                $("#confirmasenha").blur(function(){
-                    if(($("#confirmasenha").val() != $("#senha").val())){
-                        $("#confirmasenha").css({"border" : "1px solid #F00", "padding": "2px"});
-                        cont++;
-                    }   
-                });
-                $("#botao2").click(function(){
-                 var cont = 0;
-                 $("#form input").each(function(){
-                     if($(this).val() == "")
-                         {
-                             $(this).css({"border" : "1px solid #F00", "padding": "2px"});
-                             cont++;
-                         }
-                    });
-                 if(cont == 0)
-                     {
-                         $("#form").submit();
-                     }
-                });
+             if(cont == 0)
+                 {
+                     $("#form").submit();
+                 }
             });
-	</script>
+        });
+    </script>
