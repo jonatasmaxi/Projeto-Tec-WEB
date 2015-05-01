@@ -1,3 +1,4 @@
+<?php include 'connector_mysql.php'?>
 <?php include 'header.php'?>
             <section>
                <?php include 'aside.php'?>
@@ -60,23 +61,24 @@
                                 <th colspan="3">Últimos produtos adicionados</th>
                             </tr>
                             <tr class="tableLastProduct">
-                                <td>
-                                    <img src="images/produto.jpg" width="100%"/>
-                                    <h2>Smartphone Motorola Novo Moto G</h2>
-                                    <h4>Preço: R$ 700,00</h4>
-                                </td>
-                                <td>
-                                    <img src="images/produto.jpg" width="100%"/>
-                                    <h2>Smartphone Motorola Novo Moto G</h2>
-                                    <h4>Preço: R$ 700,00</h4>
-                                </td> 
-                                <td>
-                                    <img src="images/produto.jpg" width="100%"/>
-                                    <h2>Smartphone Motorola Novo Moto G</h2>
-                                    <h4>Preço: R$ 700,00</h4>
-                                </td>
+                                    <?php 
+                                        $sql = "SELECT * FROM Produto LIMIT 3"; 
+                                        $resultado = mysql_query($sql);
+                                        if (mysql_num_rows($resultado) > 0){
+                                            while($row = mysql_fetch_array($resultado)){
+                                                $nome =  $row['nome'];
+                                                $imagem =  $row['imagem'];
+                                                echo "<td>
+                                                    <img src='$imagem' width='100%'/>
+                                                    <h2> $nome </h2>	
+                                                    <h4>Preço: R$ 700,00</h4>
+                                                </td>";
+                                            }
+                                        }
+                                        ?>
                             </tr>
                         </table>
+                        
                     </div>
                     <div class="topUsers">
                         <table class="tableUsers">

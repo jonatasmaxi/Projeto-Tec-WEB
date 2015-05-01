@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Coink </title>
-        <link rel="stylesheet" type="text/css" href="../web/style.css">   
+        <link rel="stylesheet" type="text/css" href="style.css">   
     </head>
     <body>
         <div id="site">
@@ -27,7 +27,7 @@
                     <form class="search">
                         <fieldset>
                             <div class="barra">
-                                <input type="text" value="Entre com a pesquisa" id="search" name="search">
+                                <input type="text" placeholder="Entre com a pesquisa" id="search" name="search">
                             </div>
                             <div class="botao">
                                 <input type="image" src="images/search.png" value="enviar"/>

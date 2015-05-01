@@ -1,8 +1,5 @@
-<?php
-$link = mysql_connect('ckodecom_coink', 'ckodecom_coink', 'password');
-if (!$link) {
-    die('Não foi possível conectar: ' . mysql_error());
-}
-echo 'Conexão bem sucedida';
-mysql_close($link);
+<?php 
+	         
+			mysql_connect('localhost', 'ckodecom_coink', 'Ckode167!');
+			mysql_select_db('ckodecom_coink') or die(mysql_error());
 ?>

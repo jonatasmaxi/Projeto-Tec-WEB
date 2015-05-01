@@ -1,7 +1,7 @@
 <aside>
     <nav class="menuDepartments">
         <ul>
-            <li>Games
+            <li><a>Games</a>
                 <ul>
                     <li>Xbox One
                         <ul>
