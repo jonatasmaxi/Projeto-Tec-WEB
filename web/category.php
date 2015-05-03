@@ -22,13 +22,16 @@
                         if (mysql_num_rows($resultado) > 0){
                             $i = 0;
                             while($row = mysql_fetch_array($resultado)){	
+                                    
                                     if (($i % 3) == 0){
                                             echo "<tr>";
                                     }
                                     $nome = $row['nome'];
                                     $imagem = $row['imagem'];
+                                    $strLink = "<a href = 'product.php?id=" . $row['codProduto'] . "'>" . $nome . "</a>";
                                     echo "<td>
                                             <img src='$imagem' width='100%'/>
+                                            $strLink
                                             <h2> $nome </h2>	
                                             <h4>Preço: R$ 700,00</h4>
                                           </td>";
