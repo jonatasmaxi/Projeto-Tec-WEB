@@ -24,13 +24,13 @@
                     <img src="images/PigVuador.png" href="#" title="Nome do site"/>
                 </div>
                 <div class="searchBar">
-                    <form class="search">
+                    <form class="search" method="GET" action="search.php">
                         <fieldset>
                             <div class="barra">
                                 <input type="text" placeholder="Entre com a pesquisa" id="search" name="search">
                             </div>
                             <div class="botao">
-                                <input type="image" src="images/search.png" value="enviar"/>
+                                <input type="submit" src="images/search.png" value="Buscar"/>
                             </div>
                         </fieldset>
                     </form>

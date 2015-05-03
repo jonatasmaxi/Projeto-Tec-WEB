@@ -60,7 +60,7 @@ header{
 #head{
     width: 100%;
     height: 90px;
-    background-color: #FF8D31; /**amarelo*/
+    background-color: #c3c3c3; /**amarelo*/
 }
 #head .logo{
     float: left;
