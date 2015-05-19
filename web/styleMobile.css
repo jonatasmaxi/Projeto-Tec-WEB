@@ -15,30 +15,25 @@ h6 { font-size: 0.60em;font-weight: normal;}
     margin: 0 auto;
     min-height: 700px;
     display: table;
-    position: relative;   
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    background-color: #000;
 }
 body{
     width: 100%;
-    background-image: url('images/wallpaper/02.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+    background-color: #EEE;
 }
 header{
     width: 100%;
     height: 120px;
+    background-color: #EEE;
     padding: 0;
     margin: 0;
     position: relative;
 }
-#topMenu a{
- color: white;
- }
 #topMenu{
     width: 100%;
     height: 30px;
-    background-color: rgba(0,0, 0, 0.5);
+    background-color: #181818;/**azul**/
     color: #fff;
 }
 #topMenu nav{
@@ -65,7 +60,7 @@ header{
 #head{
     width: 100%;
     height: 90px;
-    background-color: rgba(255,255, 255, 0.5);
+    background-color: #c3c3c3; /**amarelo*/
 }
 #head .logo{
     float: left;
@@ -150,7 +145,7 @@ section{
     width: 100%;
     position: relative;
     display: table;
-    background-color: rgba(255,255, 255, 0.8);
+    
 }
 .content{
     width: 70%;
@@ -233,7 +228,7 @@ aside{
     margin-top: 40px; 
     height: auto;
     bottom: 0;
-    background-color: rgba(0,0, 0, 0.5);
+    background-color: #1C1C1C;
     color: #fff;
 }
 .abas, .abas * { /** margem, borda, padding zerados para evitar conflitos **/
@@ -269,7 +264,7 @@ aside{
 .abas > label span { /** estilo da aba quando não selecionada **/
     display:block;
     padding:0px;
-    background:#fff;
+    background:#c3c3c3;
 }
 .abas > label span span { /** efeito ao selecionar aba **/
     padding:0 15px;
@@ -281,12 +276,12 @@ aside{
     -webkit-transition:background .5s, color .4s;
 }
 .abas > label:hover span span { /** estilo da aba com mouse por cima **/
-    background:#CFCFCF;
-    color:#363636;
+    background:#000;
+    color:#fff;
 }
 .abas > input:checked + label span span { /** estilo da aba quando selecionada **/
-    background: #363636;
-    color:#fff;
+    background:Red;
+    color:#FFB52A;
 }
 .conteudo { /**o que aparece dentro de cada aba**/
     width:100%;
@@ -299,7 +294,7 @@ aside{
     background-size: 100% 500px;
 }
 .aba1 .conteudo-texto{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     width: 40%;
     height: 100%;
     position: relative;
@@ -315,7 +310,7 @@ aside{
     background-color: Blue;
 }
 .aba2 .conteudo-texto{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     width: 40%;
     height: 100%;
     position: relative;
@@ -332,7 +327,7 @@ aside{
     text-align: left;
 }
 .aba3 .conteudo-texto{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     width: 40%;
     height: 100%;
     position: relative;
@@ -348,7 +343,7 @@ aside{
     background-color: Purple;
 }
 .aba4 .conteudo-texto{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     width: 40%;
     height: 100%;
     position: relative;
@@ -397,7 +392,7 @@ th{
     font-size: 20px;
 }
 nav.menuDepartments ul.egmenu {  
-    background: #fff; 
+    background: #eee; 
     height: auto;
     width: 100%; 
 }

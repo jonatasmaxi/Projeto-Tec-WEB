@@ -1,4 +1,5 @@
 <?php include 'connector_mysql.php'?>
+<?php include 'simple_html_dom.php'?>
 <?php include 'header.php'?>
             <section>
                <?php include 'aside.php'?>
@@ -62,6 +63,15 @@
                             </tr>
                             <tr class="tableLastProduct">
                                     <?php 
+                                    	
+                                    	// Código para conseguir informações de outros sites
+                                    	
+                                    	//$html = file_get_html('http://www.buscape.com.br/sony-playstation-4-500-gb.html?pos=1#precos');
+                                    	
+                                    	//foreach($html->find('a') as $link){
+                                    	//	echo $link->href . '<br>';
+                                    	//}
+                                    	
                                         $sql = "SELECT * FROM Produto LIMIT 3"; 
                                         $resultado = mysql_query($sql);
                                         if (mysql_num_rows($resultado) > 0){

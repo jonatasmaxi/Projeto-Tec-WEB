@@ -2,8 +2,23 @@
     <section>
         <?php include 'aside.php'?>
         <div class="content">
-            <form name="cadastroproduto" method="post" action="painel_form_cadastro_produto.php" id="form">
-                <label for="nomeproduto"> Nome do Produto: </label><input type="text"id="nomeproduto" name="nomeproduto"> <br> <br> 
+             
+            	Selecione o produto: 
+            	<select name="produto">
+            		<option value=''> </option>
+            		<?php 
+	    			$sql = "SELECT * FROM Produto";
+	                        $resultado = mysql_query($sql);
+	                            while($row = mysql_fetch_array($resultado)){
+		                            $nome = $row['nome'];
+		                            $id= $row['codProduto'];
+		                            echo "<option value='$id'>$nome</option>";
+	                            }
+                	?>
+                </select>	
+		<br>
+		<br>
+		<form name="cadastroproduto" method="post" action="painel_form_cadastro_produto.php" id="form">
                 <label for="nomeloja"> Loja: </label> <input type="text" id="nomeloja" name="nomeloja"><br> <br>
                 <label for="enderecoloja"> Endereço da loja: </label><input type="text" id="enderecoloja" name="enderecoloja"> 
                 Estado:<select name="estado">
@@ -37,10 +52,18 @@
                         <option value="TO"> TO </option>
                 </select><br><br>
                 <label for="preco"> Preço: </label><input type="text" id="preco" name="preco"><br><br>
-                Imagem: <input type="file" id="imgproduto"><br><br>
-                <input type="button" name="Enviar" value="Enviar" id="botao2">
                 <input type="button" name="Cancelar" value="Cancelar">
             </form>
+            <?php
+            	   $sql = "SELECT * FROM Produto WHERE codProduto = " . $_POST["produto"];
+	                        $resultado = mysql_query($sql);
+	                        while($row = mysql_fetch_array($resultado)){
+		                            $nome = $row['nome'];
+		                            echo "Produto selecionado: $nome";
+	                        }
+            	    $sql = "INSERT INTO Oferta (codProduto,loja,preco,endLojaFisica,estLojaFisica) VALUES ('". $_POST["produto"] ."','".$_POST['nomeloja']."','".$_POST['preco']."','".$_POST['enderecoloja']."','".$_POST['estado']."')";
+		    $resultado = mysql_query($sql);
+    	    ?>
         </div>
     </section>
 <?php include 'footer.php'?>

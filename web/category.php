@@ -17,7 +17,21 @@
 	    </div>
             <table> 
                  <?php 
-                        $sql = "SELECT * FROM Produto WHERE categoria=". $_GET["id"]; 
+                        $id = $_GET["id"];
+                       	$cat = substr($id, -3, 1);
+                       	$subcat = substr($id, -2, 1);
+                       	$subsubcat = substr($id, -1, 1);
+                       	
+                       	if($subsubcat == 0 && $subcat == 0){
+                       		$sql = "SELECT * FROM Produto WHERE cat=$cat";
+                       		}
+                       		else 
+                       		if($subsubcat == 0 && $subcat > 0){
+                       		$sql = "SELECT * FROM Produto WHERE cat=$cat AND subcat=$subcat";
+                       		}
+                       		else{
+                       			$sql = "SELECT * FROM Produto WHERE cat=$cat AND subcat=$subcat AND subsubcat=$subsubcat"; 
+                       			}
                         $resultado = mysql_query($sql);
                         if (mysql_num_rows($resultado) > 0){
                             $i = 0;

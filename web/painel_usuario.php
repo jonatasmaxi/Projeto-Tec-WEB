@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 <head>
     <section>   
-        <h1> Paínel do Usuário </h1>
+        <h1> Painel do Usuário </h1>
         <ul class="painelusuario">
             <li> <a href="meusuploads.php"> Meus Uploads </a> </li>
             <li> <a href="cadastro.php"> Meu Cadastro </a> </li>

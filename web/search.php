@@ -1,4 +1,4 @@
-<?php include 'connector_mysql.php'?>
+0,0<?php include 'connector_mysql.php'?>
 <?php include 'header.php'?>
 <section>
     <?php include 'aside.php'?>
@@ -9,19 +9,19 @@
 	            <span>Ordenar por</span>
 	            <select class="orderCategorySelector" name="orderCategory">
 	                <option value="favoritados">Mais favoritados</option>
-	                <option value="nomeAZ">Nome AZ</option>
-	                <option value="nomeZA">Nome ZA</option>
+	                <option value="nomeAZ">Nome A-Z</option>
+	                <option value="nomeZA">Nome Z-A</option>
 	                <option value="menorPreco">Menor preço</option>
 	                <option value="maiorPreco">Maior preço</option>
 	            </select>
 	    </div>
 	                <table> 
 	    <?php
-
 		$busca = mysql_real_escape_string($_GET['search']);
 		$sql = "SELECT * FROM Produto WHERE ((nome LIKE '%".$busca."%') OR ('%".$busca."%')) ORDER BY codProduto DESC";
 		// Executa a consulta
 		$resultado = mysql_query($sql);
+		
 		 if (mysql_num_rows($resultado) > 0){
                             $i = 0;
                             while($row = mysql_fetch_array($resultado)){	
@@ -43,7 +43,10 @@
                                 }
 
                       }  
-	    ?>
+                      else{
+                      	echo "Produto não encontrado";
+	    }
+	    ?>	    
             </table>
         </div>
     </div>

@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <title>Coink </title>
         <link rel="stylesheet" type="text/css" href="style.css">   
+        <link rel="stylesheet" href="styleMobile.css" media="screen and (max-width:480px)" />
     </head>
     <body>
         <div id="site">
-        <header>            
+        <header>           
             <div id="topMenu">
                 <nav>
                     <ul>
                         <li>Ajuda</li>
                         <li>Telefone</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Google+</li>
+                        <a href="https://www.facebook.com/"><li>Facebook</li></a>
+                        <a href="https://twitter.com/"><li>Twitter</li></a>
+                        <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0"><li>Google+</li>
                     </ul>
                 </nav>
             </div>
             <div id="head">
                 <div class="logo">
-                    <img src="images/PigVuador.png" href="#" title="Nome do site"/>
+                    <a href="http://coink.ckode.com.br/"><img alt="index" src="images/PigVuador.png"/></a>
                 </div>
                 <div class="searchBar">
                     <form class="search" method="GET" action="search.php">
@@ -41,9 +42,16 @@
                     </p>
                 </div>
                 <div class="login">
-                    <img src="images/user151.png" href="#" title="User"/>
-                    <p>Faça login<br>ou cadastre-se
-                    </p>
+                	<img src='images/user151.png' href='#' title='User'/>
+                <?php
+	            	if( isset($_COOKIE['email']) )
+	            	{
+	                	echo "<p>Olá " . $_COOKIE['nome'] . "</p>";
+	            	} else echo "
+                    		<p>Faça <a href='loginCoink.php'>login</a><br>ou <a href='painel_form_cadastro.php'>cadastre-se</a>
+                    		</p>
+	            	";
+	        	?> 
                 </div>
             </div>
         </header>
